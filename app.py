@@ -582,7 +582,7 @@ body{
   <div class="search-box">
     <h2>🔎 Tra cứu đơn hàng</h2>
     <div class="search-row">
-      <input id="q" placeholder="Nhập tên zalo của bạn + mã số (vd: Ngân Miu + mã só)">
+      <input id="q" placeholder="Nhập tên zalo của bạn + mã số (vd: Ha Huy Quang + Pass)">
       <button onclick="doSearch()">Tìm</button>
     </div>
     <div id="msg" class="msg"></div>
@@ -722,3 +722,4 @@ def health():
 if __name__ == "__main__":
 
     app.run(host="0.0.0.0", port=int(os.getenv("PORT", "5000")), debug=True)
+
