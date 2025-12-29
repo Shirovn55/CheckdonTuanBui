@@ -27,10 +27,9 @@ except Exception:
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
-APP_SECRET_KEY = os.getenv("APP_SECRET_KEY", "devkey").strip()
-
+APP_SECRET_KEY = os.getenv("APP_SECRET_KEY", "").strip()
 GOOGLE_SHEET_ID  = os.getenv("GOOGLE_SHEET_ID", "").strip()
-GOOGLE_SHEET_TAB = os.getenv("GOOGLE_SHEET_TAB", "Book Shopee").strip()
+GOOGLE_SHEET_TAB = os.getenv("GOOGLE_SHEET_TAB", "").strip()
 CREDS_JSON_RAW   = os.getenv("GOOGLE_SHEETS_CREDS_JSON", "").strip()
 
 # ✅ Banner theo yêu cầu
@@ -722,5 +721,4 @@ def health():
 if __name__ == "__main__":
 
     app.run(host="0.0.0.0", port=int(os.getenv("PORT", "5000")), debug=True)
-
 
